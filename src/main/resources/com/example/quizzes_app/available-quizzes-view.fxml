@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="400.0" spacing="20.0" style="-fx-background-color: #ffffff; -fx-border-radius: 10px; -fx-background-radius: 10px;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzes_app.AvailableQuizzesController">
+    <padding>
+        <Insets top="40" right="40" bottom="40" left="40" />
+    </padding>
+
+    <Label text="Available Quizzes" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #3498db;" />
+    <ListView fx:id="quizzesListView" style="-fx-font-size: 14px; -fx-background-color: #f9f9f9; -fx-border-color: #ddd; -fx-border-radius: 5;" />
+
+    <Button text="Logout" onAction="#onLogoutButtonClick" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-padding: 10; -fx-background-radius: 5; -fx-font-size: 14px; -fx-max-width: 400;" />
+</VBox>
